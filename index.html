@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>متأكد؟</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="registrationScreen" class="screen">
+    <h2>تسجيل الدخول</h2>
+    <input type="text" id="playerName" placeholder="أدخل اسمك">
+    <input type="text" id="playerPhone" placeholder="أدخل رقم الهاتف">
+    <button id="registerBtn">تسجيل</button>
+    <p id="registerMsg"></p>
+  </div>
+
+  <div id="categoryScreen" class="screen hidden">
+    <h2>اختر 6 فئات من الأسئلة</h2>
+    <div id="categories"></div>
+    <button id="startGameBtn">ابدأ اللعبة</button>
+  </div>
+
+  <div id="questionScreen" class="screen hidden">
+    <div id="timer"></div>
+    <div id="questionText"></div>
+    <div id="answers"></div>
+  </div>
+
+  <div id="surpriseScreen" class="screen hidden">
+    <h2>سؤال مفاجئ قادم!</h2>
+    <p>أسرع فريق يجيب يحصل على نقاط مضاعفة!</p>
+    <button id="startSurpriseBtn">ابدأ السؤال المفاجئ</button>
+  </div>
+
+  <div id="resultScreen" class="screen hidden">
+    <h2>النتيجة</h2>
+    <p id="finalScore"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
